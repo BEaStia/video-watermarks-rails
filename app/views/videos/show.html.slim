@@ -1,0 +1,29 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @video.name
+p
+  strong Watermark:
+  = @video.watermark
+p
+  strong Length:
+  = @video.file_meta['length']
+p
+  strong Fps:
+  = @video.file_meta['fps']
+p
+  strong Size:
+  = "#{@video.file_meta['width']} x #{@video.file_meta['height']}"
+p
+  strong File Size:
+  = "#{@video.file_file_size} bytes"
+p
+  = image_tag @video.file(:thumb)
+
+p
+  = video_tag @video.file.url
+
+= link_to 'Edit', edit_video_path(@video)
+'|
+= link_to 'Back', videos_path
