@@ -1,0 +1,19 @@
+{
+  "name": "video-uploader",
+  "version": "1.0.0",
+  "description": "example of upload and add watermark to videos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BEaStia/video-watermarks-rails.git"
+  },
+  "author": "gophan1992@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BEaStia/video-watermarks-rails/issues"
+  },
+  "homepage": "https://github.com/BEaStia/video-watermarks-rails#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "video.js": "^5.16.0"
+  }
+}

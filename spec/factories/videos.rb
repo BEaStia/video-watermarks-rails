@@ -1,5 +1,6 @@
 FactoryGirl.define do
   factory :video do
-    name "MyString"
+    name { FFaker::LoremRU.words(10)}
+    watermark { FFaker::LoremRU.words(10) }
   end
 end
