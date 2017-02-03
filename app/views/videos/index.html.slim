@@ -5,7 +5,6 @@
         .thumbnail
           a href=video_path(video.object)
             = image_tag video.file(:thumb), alt: video.name
-
           .caption.row
             .col-md-6
               h4
@@ -20,7 +19,6 @@
                 = video.file_size
                 'Mb
             .col-md-6
-
               .pull-right
                 = link_to raw('<i class="glyphicon glyphicon-pencil" aria-hidden="true"></i>'), edit_video_path(video.object), class: 'btn btn-warning'
                 = link_to raw('<i class="glyphicon glyphicon-remove" aria-hidden="true"></i>'), video, data: {confirm: 'Are you sure?'}, method: :delete, class: 'btn btn-danger'
