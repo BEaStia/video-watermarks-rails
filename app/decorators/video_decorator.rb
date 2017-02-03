@@ -14,4 +14,8 @@ class VideoDecorator < Draper::Decorator
   def file_size
     ((object.file_file_size) / 1024.0 / 1024.0).round(2)
   end
+
+  def watermark
+    h.word_wrap(object.watermark, 5)
+  end
 end

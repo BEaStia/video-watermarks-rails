@@ -10,7 +10,8 @@ setTimeout(()=>
     player = videojs('myVideo')
     player.watermark
       type: 'text'
-      text: 'ololoaoldf'
+      text: $('#myVideo').data('watermark-text')
       position: 'center'
       no_fade: true
+      size: '320x240'
 , 1000)

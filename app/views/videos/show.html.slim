@@ -1,3 +1,8 @@
+- content_for :navigation do
+  li
+    a.btn href=edit_video_path(@video)
+      'Edit
+
 p#notice = notice
 
 p
@@ -19,11 +24,10 @@ p
   strong File Size:
   = "#{@video.file_file_size} bytes"
 p
-  = image_tag @video.file(:thumb)
-
-p
   = videojs_tag(@video)
 
+p
+  = link_to 'Original file', '/'
 = link_to 'Edit', edit_video_path(@video)
 '|
 = link_to 'Back', videos_path

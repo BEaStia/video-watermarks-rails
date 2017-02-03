@@ -1,8 +1,10 @@
 h1 Editing video
 
 == render 'form'
+hr
+.btn-group
 
-= link_to 'Show', @video
-'|
-= link_to 'Back', videos_path
+= content_for :navigation do
+  li
+    = link_to 'Show', @video
 

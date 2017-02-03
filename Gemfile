@@ -30,7 +30,6 @@ gem 'slim-rails'
 gem 'simple_form'
 
 gem 'paperclip'
-gem 'sidekiq'
 
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 3.0'
@@ -65,4 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'sidekiq'
 
+gem 'draper', github: 'drapergem/draper'
+
+gem 'activemodel-serializers-xml'
 
