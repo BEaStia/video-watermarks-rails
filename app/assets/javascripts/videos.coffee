@@ -9,5 +9,8 @@ setTimeout(()=>
     watermark_url = $('#myVideo').data('watermark-url')
     player = videojs('myVideo')
     player.watermark
-      image: watermark_url
+      type: 'text'
+      text: 'ololoaoldf'
+      position: 'center'
+      no_fade: true
 , 1000)

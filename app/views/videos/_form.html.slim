@@ -6,9 +6,9 @@
         - @video.errors.full_messages.each do |message|
           li = message
 
-  = f.text_field :name, placeholder: :name
+  = f.input :name, placeholder: :name, as: :text
 
-  = f.text_field :watermark, placeholder: :watermark
+  = f.input :watermark, placeholder: :watermark, as: :text
 
   = f.input :file, as: :file
 

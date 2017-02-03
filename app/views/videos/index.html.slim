@@ -1,21 +1,29 @@
-h1 Listing videos
+.jumbotron
+  h1 Listing videos
 
-table
-  thead
-    tr
-      th Name
-      th
-      th
-      th
-
-  tbody
-    - @videos.each do |video|
-      tr
-        td = video.name
-        td = link_to 'Show', video
-        td = link_to 'Edit', edit_video_path(video)
-        td = link_to 'Destroy', video, data: { confirm: 'Are you sure?' }, method: :delete
+- @videos.each_slice(12) do |video_group|
+  .row-fluid
+    - video_group.each do |video|
+      .col-md-1
+        .media
+          .media-body
+            .media-heading
+              a href=video_path(video.object)
+                = video.name
+            a href=video_path(video)
+              = image_tag video.file(:thumb)
+            .media-bottom
+              p
+                = video.size
+                'px
+              p
+                = video.length
+                's
+              p
+                = video.file_size
+                'Mb
+              = link_to raw('<i class="glyphicon glyphicon-remove" aria-hidden="true"></i>'), video, data: { confirm: 'Are you sure?' }, method: :delete, class: 'btn btn-danger'
 
 br
 
-= link_to 'New Video', new_video_path
+= link_to 'Upload new Video', new_video_path, class: 'btn btn-success'
