@@ -24,7 +24,7 @@ RSpec.describe VideosController, type: :controller do
   # Video. As you add validations to Video, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    FactoryGirl.attributes_for(:video)
   }
 
   let(:invalid_attributes) {

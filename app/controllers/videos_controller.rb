@@ -1,5 +1,6 @@
 class VideosController < ApplicationController
   before_action :set_video, only: [:show, :edit, :update, :destroy]
+  before_action :set_video_type, only: :show
 
   # GET /videos
   # GET /videos.json
@@ -70,5 +71,13 @@ class VideosController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def video_params
       params.require(:video).permit(:name, :watermark, :file)
+    end
+
+    def set_video_type
+      if request.user_agent =~ /Mobile/
+        @video_type = @video.file(:mobile)
+      else
+        @video_type = @video.file(:medium)
+      end
     end
 end

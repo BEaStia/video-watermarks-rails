@@ -4,6 +4,10 @@ This is test application to demonstate usage of video.js with rails.
 I know that there're gems for it but I think that they're quite old and there's no great profit in their usage.
 
 For running this project you will need ffmpeg installed at your system.
+I did it with:
+```
+brew install ffmpeg
+```
 
 Optionally you can try to deploy it to heroku. You will need this buildpacks to do it:
 ```

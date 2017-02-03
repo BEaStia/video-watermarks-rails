@@ -24,7 +24,7 @@ p
   strong File Size:
   = "#{@video.file_file_size} bytes"
 p
-  = videojs_tag(@video)
+  = videojs_tag(@video, @video_type)
 
 p
   = link_to 'Original file', @video.file.url
