@@ -22,7 +22,7 @@ p
   = image_tag @video.file(:thumb)
 
 p
-  = video_tag @video.file.url
+  = videojs_tag(@video)
 
 = link_to 'Edit', edit_video_path(@video)
 '|

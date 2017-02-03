@@ -30,6 +30,7 @@ gem 'slim-rails'
 gem 'simple_form'
 
 gem 'paperclip'
+gem 'sidekiq'
 
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 3.0'

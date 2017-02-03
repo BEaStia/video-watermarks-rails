@@ -6,14 +6,10 @@
         - @video.errors.full_messages.each do |message|
           li = message
 
-  .field
-    = f.label :name
-    = f.text_field :name
+  = f.text_field :name, placeholder: :name
 
-  .field
-    = f.label :watermark
-    = f.text_field :watermark
+  = f.text_field :watermark, placeholder: :watermark
 
-  .field
-    = f.input :file, as: :file
-  .actions = f.submit
+  = f.input :file, as: :file
+
+  = f.button :submit
