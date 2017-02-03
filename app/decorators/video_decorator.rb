@@ -16,6 +16,6 @@ class VideoDecorator < Draper::Decorator
   end
 
   def watermark
-    h.word_wrap(object.watermark, 5)
+    h.word_wrap(object.watermark)
   end
 end
