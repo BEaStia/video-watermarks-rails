@@ -15,5 +15,5 @@
 //= require turbolinks
 //= require bootstrap/dist/js/bootstrap
 //= require video.js/dist/video
-//= require videojs-watermark/dist/videojs-watermark
+//= require videojs-watermark-with-text/dist/videojs-watermark
 //= require_tree .
