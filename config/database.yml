@@ -80,6 +80,3 @@ test:
 #
 production:
   <<: *default
-  database: video-uploader_production
-  username: video-uploader
-  password: <%= ENV['VIDEO-UPLOADER_DATABASE_PASSWORD'] %>

@@ -27,7 +27,4 @@ p
   = videojs_tag(@video)
 
 p
-  = link_to 'Original file', '/'
-= link_to 'Edit', edit_video_path(@video)
-'|
-= link_to 'Back', videos_path
+  = link_to 'Original file', @video.file.url
