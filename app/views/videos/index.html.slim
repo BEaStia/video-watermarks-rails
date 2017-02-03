@@ -4,7 +4,7 @@
       .col-md-2
         .thumbnail
           a href=video_path(video.object)
-            = image_tag video.file(:thumb), alt: video.name
+            = image_tag video.file.url(:thumb), alt: video.name
           .caption.row
             .col-md-6
               h4
